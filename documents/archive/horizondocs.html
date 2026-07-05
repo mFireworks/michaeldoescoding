@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/basicStyle.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <head>
+            <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Continuous Horizon's Help Page</title>
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <main role="main" class="container-fluid">
+            <div class="col-sm-8 blog-main" style="font-size: large;">
+                <h2>Continuous Horizon's Help Page</h2>
+                <p>
+                    Our server uses a number of plugins to help enhance the survival experience. Most of these are for quality-of-life enhancements,
+                    to make life of the server easier, especially for newer players of the game. This page hopes to help you understand the systems we
+                    have in place.
+                </p>
+
+                <h3>- Commands -</h3>
+                <p>
+                    For generic commands, most of these are self explainatory. To see which commands you have access to, type <b>/help</b> in the server
+                    to see a list of them.
+
+                    Two commands of note are <b>/dynmap show</b> and <b>/dynmap hide</b>. These commands toggle displaying your location on the dynmap. In the case you wish to hide yourself.
+                </p>
+                <br>
+                <h3>- Chest Protection -</h3>
+                <p>
+                To prevent people from rummaging through your stored goods, any block that has an inventory is protected by default. These blocks
+                included, but not limited to:
+                <ul>
+                    <li>Chests</li>
+                    <li>Dispensers</li>
+                    <li>Barrels</li>
+                    <li>Woodcutters</li>
+                    <li>Shulker Boxes</li>
+                    <li>Etc. If you can store items in it, chances are that it's protected.</li>
+                    <li>(Except Hoppers, Anvils, Ender Chests, Enchantment Tables, and Jukeboxes)</li>
+                </ul>
+                These blocks are protected by LWC (Lightweight Chests), which is a command-based protection plugin.
+                By default, when any of these blocks are placed, they'll be made private where only you can access them.
+
+                There's various commands you can use here to modify the protection settings of this flag, here we'll go through the following:
+                <ul>
+                    <li><b>/cmodify public</b>
+                        <p>Will set a block to "public" protection, meaning anyone can access the block.</p></li>
+                    <li><b>/cmodify private</b>
+                        <p>Will set a block to "private" protection, meaning only you and added players can access that block. (Adding players mentioned below)</p></li>
+                    <li> <b>/cmodify password (password)</b>
+                        <p>Will set a block to "password" protection, meaning you'll have to enter in the password first before you're given access.</p></li>
+                    <li> <b>/cmodify (player)</b>
+                        <p>Allows you to add or remove a player's rights to your protection.
+                            Putting a "-" infront of a player name will revoke their access.
+                        </p></li>
+                    <li> <b>/lwc flag (flag) (on/off)</b>
+                        <p>Changes the various protection flags on a block.
+                        While there are a few flags you an change, the one that are usable are hopperin, hopperout, hopper.
+                        <ul>
+                            <li><b>hopperin</b> will allow items to flow into the protected block.</li>
+                            <li><b>hopperout</b> will allow items to flow out the protected block.</li>
+                            <li><b>hopper</b> will allow items to flow both directions in the protected block.</li>
+                        </ul></p></li>
+                    <li> <b>/cremove</b>
+                        <p>Will remove all protection on a block. Allowing other players to access and break that block.</p></li>
+                    <li> <b>/cpublic /cprivate /cpassword</b>
+                        <p>Will set a block to the respective protection if you don't already own that block. (i.e. used /cremove on it)</p>
+                    </li>
+                </ul>
+                After inputting one of these commands and is valid, then punch the block to apply this modification to. This will then apply those flags to that particular block.<br>
+                <br>
+                If you wish to keep a command active, you can use the <b>/cpersist</b> command, which when used as another command is active, you can apply that protection to many items. Inputting the command again disabled it, as it behaves like a toggle.
+                <br>
+                <br>
+                For more information on the protection system, visit the following page: <a href="https://github.com/pop4959/LWCX/wiki/Getting-Started">https://github.com/pop4959/LWCX/wiki/Getting-Started</a>
+                <br>
+                <br>
+                Or, you can watch the following video:<br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/maED6ZWWjP0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+                <br>
+                <br>
+                <br>
+                <p>
+                    Yes, this page is ugly. Literally threw this together in a couple of minutes lmao
+                </p>
+            </div>
+        </main>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top mt-auto" style="background-color: white;">
+            <div class="col-md-4 ms-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-body-secondary">Designed & Created by: Michael (Fireworks)<br>Est. 2018</span>
+            </div>
+            <ul class="nav col-md-4 me-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-body-secondary" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCwW7fKgZUB24sBNi6T5Z-hA">
+                        <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/youtube.png" alt="youtube icon" height="32">
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" target="_blank" rel="noopener noreferrer" href="https://www.twitch.tv/fireworkmaster9">
+                        <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/twitch.png" alt="twitch icon" height="32">
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" target="_blank" rel="noopener noreferrer" href="https://github.com/mFireworks">
+                        <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/github.png" alt="github icon" height="32">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

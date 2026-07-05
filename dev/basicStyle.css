@@ -1,0 +1,26 @@
+#weastcoast-map {
+  height: 950px;
+}
+
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+.vertical-offset {
+  margin-bottom: 4.5rem;
+}
+
+.mw-24 {
+  max-width: 24rem;
+}
+
+.mw-36 {
+  max-width: 36rem;
+}
+
+.pkmnImg {
+  height: 125px;
+  width: auto;
+  object-fit: none;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"> 
+
+<html lang='en'>
+    <head>
+
+        <title>
+            DnD Random Item Generator
+        </title>
+
+        <link rel="shortcut icon" type="image/x-icon" href="dice.ico">
+        <link rel="stylesheet" type="text/css" href="magicGen.css">
+    </head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="basicListLoad.js"></script>
+    <script src="magicGen.js"></script>
+
+    <body class="d-flex flex-column min-vh-100">
+        <div id="sidebar">
+            <ul>
+                <li><a href="toDoList.html">Planned Features List</a></li>
+                <li><a href="../../../index.html">Return to Home</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <h2>DnD Random Item Generator</h2>
+            <br>
+            <br>
+            <div id="flex">
+                <div id="options">
+                    # of Items: <input type="text" id="numOfItems" value="1"><br>
+                    <br>
+                    Item Type: <select id="itemType">
+                        <option value=0>Trinket</option>
+                        <option value=1>Weapon</option>
+                        <option value=2>Armor</option>
+                        <option value=3>Random</option>
+                    </select><br>
+                    <br>
+                    Curse Percentage: <input type="text" id="curseChance" value="0" size="1">%<br>
+                    <br>
+                    <input type="button" id="submit" value="Generate"><br>
+                    <div id="advOptions">
+                        <input type="button" id="advOptionsBtn" value="Advanced Options...">
+                    </div>
+                </div>
+                <div id="trinketOptions">
+                    Trinket Options:<br>
+                    <input id="trinketOption" type="checkbox">Guaranteed Curse?<br>
+                </div>
+            </div>
+            <br>
+            <div id="output">
+
+            </div>
+        </div>
+    </body>
+</html>

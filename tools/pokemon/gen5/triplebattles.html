@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="../../../dev/basicStyle.css">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <title>Michael Does Coding</title>
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/teamCode.js"></script>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Michael Does Coding</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../gamejournal/landing.html" role="button"aria-haspopup="true" aria-expanded="false">Gaming Journal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../minecraft/landing.html" role="button" aria-haspopup="true" aria-expanded="false">Minecraft</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../landing.html" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../documents/landing.html" role="button" aria-haspopup="true" aria-expanded="false">Documents</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Links
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCwW7fKgZUB24sBNi6T5Z-hA">Youtube</a></li>
+                                <li><a class="dropdown-item" target="_blank" rel="noopener noreferrer" href="https://www.twitch.tv/fireworkmaster9">Twitch</a></li>
+                                <li><a class="dropdown-item" target="_blank" rel="noopener noreferrer" href="https://github.com/mFireworks">Github</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+
+        </div>
+        <main role="main" class="container">
+            <h1>Triple/Rotation Battles Only - Pokemon Generations 5 & 6</h1>
+            <hr>
+            <p style="font-size:larger">
+                Turns all battles within the generation 5 & 6 Pokemon games into triple or rotation battles. <br>
+                <b>NOTE:</b> This tool has been deprecated. While it can still be used, it's cumbersome and confusing for some to go modify the game's internal files. There's an improved process that can be found <a href="../battlestylemod/battlestyle.html">here</a>. However, this version might still be viable if you're looking to apply the tool to rom hacks, that's just untested by myself.
+            </p>
+            <p>
+                <a href="https://github.com/mFireworks/Triple-Battle-Converter/releases/tag/v2.3" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Download on Github</a>
+            </p>
+            <hr>
+            <p>
+                This project came as a request from <a href="https://www.youtube.com/@DonShnack" target="_blank" rel="noopener noreferrer">Don Shnack</a> as a potential stream/video idea he could do for his channel. I had no background in modding Pokemon games, but thought it was possible since the <a href="https://github.com/Ajarmar/universal-pokemon-randomizer-zx" target="_blank" rel="noopener noreferrer">Pokemon Universal Randomizer</a> had the option to make all battles double battles. Turns out, there was some talk about the idea online, but nobody had a tool to do it. For his stream I modified all the trainers by hand, but saw that others were interested in doing their own runs of the mod. That brings us to this tool that automates the process of setting the flag for each trainer. Granted, this could be improved a lot in terms of having a user interface and not having to extract files from the game itself, but again, modding these games I'm unfamiliar with. Maybe someday I'll revisit this and improve it, or if you want to take a shot at it, all the code is on the github page linked above.
+            </p>
+            <hr>
+            <h2>Installation Instructions</h2>
+            <p>
+                You can either watch the video below, or follow the written instructions below.
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/u3LQNY04gO8?si=afBYlksJkDW_YUeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BiT1Pt8SW08?si=vL9zric7Vkc6038b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </p>
+            <p>
+                The guides assumes your machine is running Windows. That's the only OS that I can work on to make a guide for. However, someone did go through the generation 5 process on Linux using the same tools. To get the tools to run properly on Linux, here's the setup they had to use:
+                <ul>
+                    <li>Bottles</li>
+                    <li>Runner: caffe-9.7</li>
+                    <li>Dependencies:</li>
+                    <ul>
+                        <li>mono</li>
+                        <li>dotnetcoredesktop8</li>
+                    </ul>
+                </ul>
+                Thanks return215 for figuring this out!
+            </p>
+            <h3>
+                Disclaimer
+            </h3>
+            <p>
+                This program modifies files within a folder at the binary level. Incorrect usage of this tool can lead to potential data corruption. There are a number of checks in place to mitigate the chances of this occurring, but use this tool at your own risk.
+            </p>
+            <h3>Required Tools</h3>
+            <hr>
+            <h4>For All Generations</h4>
+            <ul>
+                <li>
+                    <a href="https://github.com/Ajarmar/universal-pokemon-randomizer-zx/releases" target="_blank" rel="noopener noreferrer">Universal Pokemon Randomizer</a> - Used to randomize the game and set some of the flags that this tool doesn't set. (This tool does require <a href="https://www.oracle.com/java/technologies/downloads/#java22" target="_blank" rel="noopener noreferrer">java</a> to run)
+                </li>
+                <li>
+                    <a href="https://dotnet.microsoft.com/en-us/download" target="_blank" rel="noopener noreferrer">.NET 8</a> - This tool is written in C#, which requires the .Net Runtime to be installed on your machine. This link should provide the download that fits your OS and processor.
+                </li>
+            </ul>
+            <h4>For Generation 5</h4>
+            <ul>
+                <li>
+                    <a href="https://projectpokemon.org/home/files/file/2070-nitro-explorer/" target="_blank" rel="noopener noreferrer">Nitro Explorer 2</a> - Used to extract compressed files from the game.
+                </li>
+                <li>
+                    <a href="https://projectpokemon.org/home/files/file/2073-nds-editor-kiwids/" target="_blank" rel="noopener noreferrer">NDS Editor (kiwi.ds)</a> - Used to decompressed the extracted files from the game.
+                </li>
+            </ul>
+            <h4>For Generation 6</h4>
+            <ul>
+                <li>
+                    <a href="https://github.com/evandixon/DotNet3dsToolkit/releases/tag/1.4.6" target="_blank" rel="noopener noreferrer">DotNet 3DS Toolkit</a> - Used to extract compressed files from the game.
+                </li>
+                <li>
+                    <a href="https://github.com/kwsch/GARCTool/releases/tag/1.3a" target="_blank" rel="noopener noreferrer">GARCTool</a> - Used to decompress the extracted files from the game.
+                </li>
+            </ul>
+            <hr>
+            <h3>Optional Tools</h3>
+            <ul>
+                <li>
+                    <a href="https://projectpokemon.org/home/forums/topic/13424-kazos-bw-tools/" target="_blank" rel="noopener noreferrer">Kazo's B/W Tools</a> - Not required to make the triple battles, but the included trainer editor can be useful to ensure the tool worked for the generation 5 games.
+                </li>
+                <li>
+                    <a href="https://projectpokemon.org/home/forums/topic/34377-pk3ds-pok%C3%A9mon-3ds-rom-editor-and-randomizer/" target="_blank" rel="noopener noreferrer">pk3DS</a> - Not required, but will allow you to view the game's information to ensure the tool worked for the generation 6 games.
+                </li>
+            </ul>
+            <hr>
+            <h3>Usage</h3>
+            <h4>All Generations</h4>
+            <ol>
+                <li>
+                    Open the <b>Universal Pokemon Randomizer</b> and load your game into the tool. Most of the settings within here are fair game. Though there are two required settings to set.
+                    <ul>
+                        <li>Under Foe Pokemon, randomize the trainer's pokemon and check Double Battle Mode. This ensures that the trainer's AI is set to the multi-battle AI, so they won't attack their own pokemon.</li>
+                        <li>Also under Foe Pokemon, check Boss Trainers, Important Trainers, and Regular Trainers under Additional Pokemon for.... Set the amount of pokemon to add to each group to a minimum of 2. This will ensure that all trainers have at least 3 pokemon, which is required for the triple battles to activate.</li>
+                        <li>While not required, it's also recommended to set the trainer and wild pokemon Percentage Level Modifier to around +20%, since you'll be getting a lot more experience with all the added pokemon, it should even out the level curve.</li>
+                    </ul>
+                </li>
+                <li>
+                    Once all your randomizer settings are set, hit Randomize (Save) to create your randomized game.
+                </li>
+            </ol>
+            <h4>Generation 5</h4>
+            <ol>
+                <li>
+                    Now open <b>Nitro Explorer 2</b> and load your randomized game. Within here, you're going to extract the following file depending on which game you're modifying:
+                    <ul>
+                        <li>Black 1/White 1: Extract a/0/9/2, name the file trdata.narc.</li>
+                        <li>Black 2/White 2: Extract a/0/9/1, name the file trdata.narc.</li>
+                    </ul>
+                </li>
+                <li>
+                    Now open <b>NDS Editor (kiwi.ds)</b> and drag your trdata.narc file into the window. Double click on the added entry to the list, check all files within the archive, and extract all files. This should create a folder named trdata within the same folder as NDS Editor with the specified number of files within it:
+                    <ul>
+                        <li>Black 1/White 1: 616 Files</li>
+                        <li>Black 2/White 2: 814 Files</li>
+                        <li>Note #1: Make sure your <b>trdata.narc</b> is in a different directory than the <b>kiwi.ds</b> executable. Otherwise, you might get an error about overwriting files when trying to extract the files.</li>
+                        <li>Note #2: <b>kiwi.ds</b> has a bug where if you have a non-english character within the filepath to your <b>trdata.narc</b> file, it'll throw an Unsupported File Type error. An easy way around this issue is to put the <b>trdata.narc</b> file onto a flashdrive and drag it into kiwi from there.</li>
+                    </ul>
+                </li>
+                <li>
+                    Now in the Triple Battle Converter folder, double-click on <b>TripleBattleConverter2.exe</b> and a small window should pop-up.
+                </li>
+                <li>
+                    Within the window, click on the <b>Browse...</b> button and navigate to the newly created <b>trdata</b> folder. Select it and click <b>Select Folder</b>.
+                </li>
+                <li>
+                    Select which game you're converting below, and then click the <b>Convert</b> button. If all went well, you should see a window pop-up with <b>Modified 616/814 Trainers</b> inside. That means all the trainers are now triple battles!
+                </li>
+                <li>
+                    Now reopen <b>NDS Editor (kiwi.ds)</b>, and in the toolbar, go Tools > Make Narc File... In the upper field, select the path to the trdata folder that we just modified and click OK. You should now have a new trdata.narc file within the same folder as the NDS Editor (kiwi.ds).
+                </li>
+                <li>
+                    Now reopen <b>Nitro Explorer 2</b>, load your randomized game, and navigate to the same file that you extracted. Instead of extracting, you're now going to select Reinsert. Navigate to the trdata.narc file you've created and select it. The status bar at the bottom should now say Reinserted 1/2 successfully. Your game is now ready to play!
+                </li>
+            </ol>
+            <h4>Generation 6</h4>
+            <ol>
+                <li>Now open <b>DotNet 3DS Toolkit</b>, which is with <b>ToolkitForm.exe</b>. Under the <b>Extract</b> tab, set the following fields:
+                    <ul>
+                        <li>
+                            For the <b>Source ROM</b>, browse for your randomized generation 6 game.
+                        </li>
+                        <li>
+                            For the <b>Output Directory</b>, create a new folder on your desktop for ease of access and select that as the destination.
+                        </li>
+                        <li>
+                            For the <b>Options</b>, leave <b>Auto</b> selected.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Now click the <b>Extract</b> button. It might take a while, but it'll eventually say <b>Ready</b> in the bottom-left corner for once it's completed.
+                </li>
+                <li>
+                    Now open <b>GARCTool</b> and select <b>Open File</b>. Browse within your new folder into the <b>RomFS</b> folder and navigate to the file of your game:
+                    <ul>
+                        <li>
+                            X/Y: Extract <b>a/0/3/8</b>.
+                        </li>
+                        <li>
+                            Omega Ruby/Alpha Sapphire: Extract <b>a/0/3/6</b>.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Extract the selected file. It should say that it unpacked X amount of files from the GARC:
+                    <ul>
+                        <li>
+                            X/Y: 785 Files
+                        </li>
+                        <li>
+                            Omega Ruby/Alpha Sapphire: 950 Files
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Navigate to that directory you just extracted the files out of and you should see a folder named <b>#_</b>, rename this folder to <b>trdata</b>.
+                </li>
+                <li>
+                    Now in the Triple Battle Converter folder, double-click on the Triple Battle Converter tool pertaining to your OS and a small window should pop-up.
+                </li>
+                <li>
+                    Within the window, click on the <b>Browse...</b> button and navigate to the newly renamed <b>trdata</b> folder. Select it and click <b>Select Folder</b>.
+                </li>
+                <li>
+                    Select which game you're converting below, select what type of battle you'd like, then click the <b>Convert</b> button. If all went well, you should see a window pop-up with <b>Modified 785/950 Trainers</b> inside. That means all the trainers are now converted!
+                </li>
+                <li>
+                    Now go back to the <b>GARCTool</b> and select <b>Open Folder</b>. Browse to your modified <b>trdata</b> folder, select it, and click process.
+                </li>
+                <li>
+                    Navigate back to the directory with your newly created <b>trdata.garc</b> file. Delete your <b>trdata</b> folder and the original garc file (either <b>6</b> or <b>8</b>, depending on which game your modifying). Rename your newly created <b>trdata.garc</b> file to the file you just deleted.
+                </li>
+                <li>
+                    Now go back to the <b>DotNet 3DS Toolkit</b> and go to the <b>Build</b> tab. The settings within this tab should be as followed:
+                    <ul>
+                        <li>
+                            For the <b>Source Directory</b>, browse to the new folder that you created on your desktop.
+                        </li>
+                        <li>
+                            For the <b>Output ROM</b>, browse to where you'd like the finished ROM to go and give it a name.
+                        </li>
+                        <li>
+                            For the <b>Output ROM Format</b>, select <b>0-Key Encrypted CCI (for Gateway)</b>.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Now click the <b>Build</b> button and a new window should pop-up showing the rebuilding process. Once that's complete, you're done building your game!
+                </li>
+            </ol>
+            <hr>
+            <h2>Limitations</h2>
+            <p>
+                There are a handful of trainers in each game that aren't triple battles. This seemed by design from the Universal Randomizer, so I followed their example. They are the following:
+                <ul>
+                    <li>Black 1/White 1: First battle against Cheren, Bianca, and N.</li>
+                    <li>Black 2/White 2: First battle against Rival and Multi-Battle with old player character.</li>
+                    <li>X/Y: First Rival Fight, the battle for the Mega Ring, and some others I'm not too sure of.</li>
+                    <li>Omega Ruby/Alpha Sapphire: First Rival Fight</li>
+                </ul>
+                Also, it appears that most route trainer battles don't initiate if you don't have enough pokemon in your team to start the battle. Some scripted battles, like rival battles and gym battles still seem to work. Just ensure you have 3 non-fainted pokemon in your team at all times for full functionality.
+            </p>
+        </main>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top mt-auto" style="background-color: white;">
+            <div class="col-md-4 ms-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-body-secondary">Designed & Created by: Michael (Fireworks)<br>Est. 2018</span>
+            </div>
+            <ul class="nav col-md-4 me-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-body-secondary" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCwW7fKgZUB24sBNi6T5Z-hA">
+                        <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/youtube.png" alt="youtube icon" height="32">
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" target="_blank" rel="noopener noreferrer" href="https://www.twitch.tv/fireworkmaster9">
+                        <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/twitch.png" alt="twitch icon" height="32">
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" target="_blank" rel="noopener noreferrer" href="https://github.com/mFireworks">
+                        <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/github.png" alt="github icon" height="32">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

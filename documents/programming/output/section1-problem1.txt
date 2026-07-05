@@ -1,0 +1,259 @@
+Welcome to Array Manipulation!
+
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 1
+Adding number to array
+----------------------
+Enter any number to insert into the array: 1.5
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 1
+Adding number to array
+----------------------
+Enter any number to insert into the array: 0
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 1
+Adding number to array
+----------------------
+Enter any number to insert into the array: 4.6
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 1
+Adding number to array
+----------------------
+Enter any number to insert into the array: -12
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 5
+Print the entire array.
+-------------------------------
+[ 1.5, 0.0, 4.6, -12.0 ]
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 2
+Find if a number is within the array.
+-------------------------------------
+Enter the number you wish to find: 0
+0.0 is within the array! In position #1
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 3
+Remove a number from the array.
+-------------------------------
+Enter the number you wish to remove: 0
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 5
+Print the entire array.
+-------------------------------
+[ 1.5, 4.6, -12.0 ]
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 1
+Adding number to array
+----------------------
+Enter any number to insert into the array: 3
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 1
+Adding number to array
+----------------------
+Enter any number to insert into the array: 3
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 4
+Sort the array.
+-------------------------------
+Array Sorted
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 5
+Print the entire array.
+-------------------------------
+[ -12.0, 1.5, 3.0, 3.0, 4.6 ]
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 6
+Print number at specific index.
+-------------------------------
+Enter location you want to print between 0 and 4: 2
+Number at position 2: 3.0
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 7
+Print statistics of values within the array.
+-------------------------------
+Average: 0.019999999999999928
+Median: 3.0
+Mode: 3.0
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 8
+Clear the array.
+-------------------------------
+Array cleared.
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 5
+Print the entire array.
+-------------------------------
+[  ]
+Choose an option:
+1. Add a number to the array.
+2. Search the array for a number.
+3. Remove a number from the array.
+4. Sort the array.
+5. Print the array.
+6. Print out the number at the specified index.
+7. Print out the mean, median, and mode of the array.
+8. Clear the array.
+9. Exit program.
+------------------------------------------------------
+Your Choice: 9
+Goodbye!

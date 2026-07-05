@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="../../../dev/basicStyle.css">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <title>Michael Does Coding</title>
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/teamCode.js"></script>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Michael Does Coding</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../gamejournal/landing.html" role="button"aria-haspopup="true" aria-expanded="false">Gaming Journal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../minecraft/landing.html" role="button" aria-haspopup="true" aria-expanded="false">Minecraft</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../landing.html" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../documents/landing.html" role="button" aria-haspopup="true" aria-expanded="false">Documents</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Links
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCwW7fKgZUB24sBNi6T5Z-hA">Youtube</a></li>
+                                <li><a class="dropdown-item" target="_blank" rel="noopener noreferrer" href="https://www.twitch.tv/fireworkmaster9">Twitch</a></li>
+                                <li><a class="dropdown-item" target="_blank" rel="noopener noreferrer" href="https://github.com/mFireworks">Github</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+
+        </div>
+        <main role="main" class="container">
+            <h1>Pokemon Draft League Team Analyzer</h1>
+            <hr>
+            <p style="font-size:larger">
+                Easily view important information about a team of pokemon to help prepare for Draft League matches.<br>
+                Have a suggestion or found a bug? You can report them <a target="_blank" rel="noopener noreferrer" href="https://github.com/mFireworks/draft-team-planner/issues">here!</a><br>
+                <br>
+                Powered by <a target="_blank" rel="noopener noreferrer" href="https://pokeapi.co/" target="_blank">PokeAPI</a>
+            </p>
+            <div class="row bg-dark text-center rounded mb-4">
+                <div class="col p-3">
+                    <div class="text-light">
+                        <h2>Pokemon Team:</h2>
+                    </div>
+                    <div id="pokemonTeam" class="row justify-content-center mb-3">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mt-2">
+                                <input type="text" id="pokemonNameSearchField" class="searchField form-control" placeholder="Pokemon Names..." aria-label="Pokemon Name" aria-describedby="button-addon2">
+                                <input type="text" id="typeSearchField" class="searchField form-control" placeholder="Types..." aria-label="Types..." aria-describedby="button-addon2">
+                                <input type="text" id="abilitySearchField" class="searchField form-control" placeholder="Abilities..." aria-label="Abilities..." aria-describedby="button-addon2">
+                                <input type="text" id="moveSearchField" class="searchField form-control" placeholder="Moves..." aria-label="Moves..." aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" type="button" id="basicSearchButton">Search</button>
+                                    <button class="btn btn-secondary" type="button" id="clearSearchButton">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <table id="searchTable" class="table table-striped table-bordered table-hover table-secondary">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Pokemon</th>
+                                        <th>Typing</th>
+                                        <th>Abilities</th>
+                                        <th>HP</th>
+                                        <th>Atk</th>
+                                        <th>Def</th>
+                                        <th>SpA</th>
+                                        <th>SpD</th>
+                                        <th>Spe</th>
+                                        <th>BST</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="searchResults">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-dark text-center rounded p-3 mb-4">
+                <div class="col-lg-2" id="ActivePokemonCardContainer">
+                </div>
+                <div class="col text-center">
+                    <div class="row">
+                        <div class="col">
+                            <table class="table table-striped table-bordered table-secondary">
+                                <thead>
+                                    <tr>
+                                        <th>Typing</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="ActivePokemonTypes"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col">
+                            <table class="table table-striped table-bordered table-secondary">
+                                <thead>
+                                    <tr>
+                                        <th>Abilities</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="ActivePokemonAbilities"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <table class="table table-striped table-bordered table-secondary">
+                                <thead>
+                                    <tr>
+                                        <th colspan="7">Base Stats</th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            HP
+                                        </th>
+                                        <th>
+                                            Atk
+                                        </th>
+                                        <th>
+                                            Def
+                                        </th>
+                                        <th>
+                                            SpA
+                                        </th>
+                                        <th>
+                                            SpD
+                                        </th>
+                                        <th>
+                                            Spe
+                                        </th>
+                                        <th>
+                                            BST
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="ActivePokemonHP"></td>
+                                        <td id="ActivePokemonAtk"></td>
+                                        <td id="ActivePokemonDef"></td>
+                                        <td id="ActivePokemonSpA"></td>
+                                        <td id="ActivePokemonSpD"></td>
+                                        <td id="ActivePokemonSpe"></td>
+                                        <td id="ActivePokemonBST"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <table class="table table-striped table-bordered table-secondary">
+                                <thead>
+                                    <tr>
+                                        <th>Useful Moves</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="ActivePokemonUsefulMoves"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-dark text-light text-center rounded pt-3 mb-4">
+                <div class="col">
+                    <table class="table table-striped table-bordered table-secondary">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Important Moves</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Stealth Rock</td>
+                                <td id="StealthRockList"></td>
+                            </tr>
+                            <tr>
+                                <td>Spikes</td>
+                                <td id="SpikesList"></td>
+                            </tr>
+                            <tr>
+                                <td>Toxic Spikes</td>
+                                <td id="ToxicSpikesList"></td>
+                            </tr>
+                            <tr>
+                                <td>Sticky Web</td>
+                                <td id="StickyWebList"></td>
+                            </tr>
+                            <tr>
+                                <td>Hazard Control</td>
+                                <td id="HazardControlList"></td>
+                            </tr>
+                            <tr>
+                                <td>Pivot Moves</td>
+                                <td id="PivotMoveList"></td>
+                            </tr>
+                            <tr>
+                                <td>Heal Bell/Aromatherapy</td>
+                                <td id="ClericList"></td>
+                            </tr>
+                            <tr>
+                                <td>Wish</td>
+                                <td id="WishList"></td>
+                            </tr>
+                            <tr>
+                                <td>Trick Room</td>
+                                <td id="TrickRoomList"></td>
+                            </tr>
+                            <tr>
+                                <td>Priority</td>
+                                <td id="PriorityList"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <table class="table table-striped table-bordered table-secondary">
+                        <thead>
+                            <tr>
+                                <th colspan="3">Cores</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Grass</b></td>
+                                <td><b>Fire</b></td>
+                                <td><b>Water</b></td>
+                            </tr>
+                            <tr>
+                                <td id="GrassCoreList"></td>
+                                <td id="FireCoreList"></td>
+                                <td id="WaterCoreList"></td>
+                            </tr>
+                            <tr>
+                                <td><b>Dark</b></td>
+                                <td><b>Fighting</b></td>
+                                <td><b>Psychic</td>
+                            </tr>
+                            <tr>
+                                <td id="DarkCoreList"></td>
+                                <td id="FightingCoreList"></td>
+                                <td id="PsychicCoreList"></td>
+                            </tr>
+                            <tr>
+                                <td><b>Dragon</b></td>
+                                <td><b>Fairy</b></td>
+                                <td><b>Steel</b></td>
+                            </tr>
+                            <tr>
+                                <td id="DragonCoreList"></td>
+                                <td id="FairyCoreList"></td>
+                                <td id="SteelCoreList"></td>
+                            </tr>
+                            <tr>
+                                <td><b>Electric</b></td>
+                                <td><b>Ground</b></td>
+                                <td><b>Poison</b></td>
+                            </tr>
+                            <tr>
+                                <td id="ElectricCoreList"></td>
+                                <td id="GroundCoreList"></td>
+                                <td id="PoisonCoreList"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><b>Ghost</b></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" id="GhostCoreList"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <table class="table table-striped table-bordered table-secondary">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Speed Tiers</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&lt;=30</td>
+                                <td id="SlowestSpeedList"></td>
+                            </tr>
+                            <tr>
+                                <td>31-50</td>
+                                <td id="40SpeedList"></td>
+                            </tr>
+                            <tr>
+                                <td>51-70</td>
+                                <td id="60SpeedList"></td>
+                            </tr>
+                            <tr>
+                                <td>71-90</td>
+                                <td id="80SpeedList"></td>
+                            </tr>
+                            <tr>
+                                <td>91-110</td>
+                                <td id="100SpeedList"></td>
+                            </tr>
+                            <tr>
+                                <td>&gt;110</td>
+                                <td id="GreatestSpeedList"></td>
+                            </tr>
+                            <tr>
+                                <td>Largest Speed Gap</td>
+                                <td id="LargestSpeedGap"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row bg-dark text-light text-center rounded p-3">
+                <table class="table table-striped table-bordered table-secondary">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th colspan="3">Resistances</th>
+                            <th colspan="2">Weaknesses</th>
+                        </tr>
+                        <tr>
+                            <th>Type</th>
+                            <th>x0</th>
+                            <th>x0.25</th>
+                            <th>x0.5</th>
+                            <th>x2</th>
+                            <th>x4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bug</td>
+                            <td id="BugImmuneList"></td>
+                            <td id="BugQuadResistList"></td>
+                            <td id="BugResistList"></td>
+                            <td id="BugWeakList"></td>
+                            <td id="BugQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Dark</td>
+                            <td id="DarkImmuneList"></td>
+                            <td id="DarkQuadResistList"></td>
+                            <td id="DarkResistList"></td>
+                            <td id="DarkWeakList"></td>
+                            <td id="DarkQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Dragon</td>
+                            <td id="DragonImmuneList"></td>
+                            <td id="DragonQuadResistList"></td>
+                            <td id="DragonResistList"></td>
+                            <td id="DragonWeakList"></td>
+                            <td id="DragonQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Electric</td>
+                            <td id="ElectricImmuneList"></td>
+                            <td id="ElectricQuadResistList"></td>
+                            <td id="ElectricResistList"></td>
+                            <td id="ElectricWeakList"></td>
+                            <td id="ElectricQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Fairy</td>
+                            <td id="FairyImmuneList"></td>
+                            <td id="FairyQuadResistList"></td>
+                            <td id="FairyResistList"></td>
+                            <td id="FairyWeakList"></td>
+                            <td id="FairyQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Fighting</td>
+                            <td id="FightingImmuneList"></td>
+                            <td id="FightingQuadResistList"></td>
+                            <td id="FightingResistList"></td>
+                            <td id="FightingWeakList"></td>
+                            <td id="FightingQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Fire</td>
+                            <td id="FireImmuneList"></td>
+                            <td id="FireQuadResistList"></td>
+                            <td id="FireResistList"></td>
+                            <td id="FireWeakList"></td>
+                            <td id="FireQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Flying</td>
+                            <td id="FlyingImmuneList"></td>
+                            <td id="FlyingQuadResistList"></td>
+                            <td id="FlyingResistList"></td>
+                            <td id="FlyingWeakList"></td>
+                            <td id="FlyingQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Ghost</td>
+                            <td id="GhostImmuneList"></td>
+                            <td id="GhostQuadResistList"></td>
+                            <td id="GhostResistList"></td>
+                            <td id="GhostWeakList"></td>
+                            <td id="GhostQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Grass</td>
+                            <td id="GrassImmuneList"></td>
+                            <td id="GrassQuadResistList"></td>
+                            <td id="GrassResistList"></td>
+                            <td id="GrassWeakList"></td>
+                            <td id="GrassQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Ground</td>
+                            <td id="GroundImmuneList"></td>
+                            <td id="GroundQuadResistList"></td>
+                            <td id="GroundResistList"></td>
+                            <td id="GroundWeakList"></td>
+                            <td id="GroundQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Ice</td>
+                            <td id="IceImmuneList"></td>
+                            <td id="IceQuadResistList"></td>
+                            <td id="IceResistList"></td>
+                            <td id="IceWeakList"></td>
+                            <td id="IceQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Normal</td>
+                            <td id="NormalImmuneList"></td>
+                            <td id="NormalQuadResistList"></td>
+                            <td id="NormalResistList"></td>
+                            <td id="NormalWeakList"></td>
+                            <td id="NormalQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Poison</td>
+                            <td id="PoisonImmuneList"></td>
+                            <td id="PoisonQuadResistList"></td>
+                            <td id="PoisonResistList"></td>
+                            <td id="PoisonWeakList"></td>
+                            <td id="PoisonQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Psychic</td>
+                            <td id="PsychicImmuneList"></td>
+                            <td id="PsychicQuadResistList"></td>
+                            <td id="PsychicResistList"></td>
+                            <td id="PsychicWeakList"></td>
+                            <td id="PsychicQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Rock</td>
+                            <td id="RockImmuneList"></td>
+                            <td id="RockQuadResistList"></td>
+                            <td id="RockResistList"></td>
+                            <td id="RockWeakList"></td>
+                            <td id="RockQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Steel</td>
+                            <td id="SteelImmuneList"></td>
+                            <td id="SteelQuadResistList"></td>
+                            <td id="SteelResistList"></td>
+                            <td id="SteelWeakList"></td>
+                            <td id="SteelQuadWeakList"></td>
+                        </tr>
+                        <tr>
+                            <td>Water</td>
+                            <td id="WaterImmuneList"></td>
+                            <td id="WaterQuadResistList"></td>
+                            <td id="WaterResistList"></td>
+                            <td id="WaterWeakList"></td>
+                            <td id="WaterQuadWeakList"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top mt-auto" style="background-color: white;">
+            <div class="col-md-4 ms-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-body-secondary">Designed & Created by: Michael (Fireworks)<br>Est. 2018</span>
+            </div>
+            <ul class="nav col-md-4 me-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-body-secondary" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCwW7fKgZUB24sBNi6T5Z-hA">
+                        <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/youtube.png" alt="youtube icon" height="32">
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" target="_blank" rel="noopener noreferrer" href="https://www.twitch.tv/fireworkmaster9">
+                        <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/twitch.png" alt="twitch icon" height="32">
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" target="_blank" rel="noopener noreferrer" href="https://github.com/mFireworks">
+                        <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/github.png" alt="github icon" height="32">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

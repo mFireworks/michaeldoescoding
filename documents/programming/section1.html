@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="../../dev/basicStyle.css">
+    <link href="../../dev/prism.css" rel="stylesheet" />
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../dev/tabOverride.css">
+
+        <title>Michael Does Coding</title>
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="../../dev/prism.js"></script>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Michael Does Coding</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../gamejournal/landing.html" role="button"aria-haspopup="true" aria-expanded="false">Gaming Journal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../minecraft/landing.html" role="button" aria-haspopup="true" aria-expanded="false">Minecraft</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../tools/landing.html" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../landing.html" role="button" aria-haspopup="true" aria-expanded="false">Documents</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Links
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCwW7fKgZUB24sBNi6T5Z-hA">Youtube</a></li>
+                                <li><a class="dropdown-item" target="_blank" rel="noopener noreferrer" href="https://www.twitch.tv/fireworkmaster9">Twitch</a></li>
+                                <li><a class="dropdown-item" target="_blank" rel="noopener noreferrer" href="https://github.com/mFireworks">Github</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main role="main">
+            <div class="container" style="font-size: large;">
+                <h1>Section 1: The Basics</h1>
+                <hr>
+                <p>
+                    Here we're going to go over the basic components of really any programming language. I'm going to assume that you've already been exposed to these concepts before, so most of this might be a refresher. However, that doesn't make this section any less important to go over. Having a strong grasp on the basic tools of programming is absolutely required, as everything beyond this builds upon these concepts and tools. If you don't know how to use your tools well, then you can't use them to their full potential.
+                </p>
+                <p>
+                    Below are some sites that I think explain these key topics well. Since this should just be a review, reading them may not be necessary, but if you find yourself getting stuck on the practice problem below, step back from it, and give these a read. While it's critical to understand these concepts, it's also important to know you have the internet at your fingertips, so don't be afraid to look stuff up when you get stuck! The key to growth in this field, especially when starting out, is to constantly be learning, recognizing when you don't fully understand something, and seek out the answers to remove that confusion and deepen your understanding of these concepts.
+                </p>
+                <p>
+                    Do be aware that the links provided are just the bare minimum as to the different topics could cover. There's other variations and keywords that I won't go into explicit detail here, but the links will provide you with a starting point. From there, explore around and learn more about the topics!
+                </p>
+                <ul class="nav nav-tabs border" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="java-tab" data-bs-toggle="tab" data-bs-target="#java" type="button" role="tab" aria-controls="java" aria-selected="false">Java</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="cpp-tab" data-bs-toggle="tab" data-bs-target="#cpp" type="button" role="tab" aria-controls="cpp" aria-selected="false">C++</button>
+                    </li>
+                </ul>
+                <div class="tab-content border p-2" id="myTabContent">
+                    <div class="tab-pane fade show active" id="java" role="tabpanel" aria-labelledby="java-tab">
+                        All these links lead to <a target="_blank" rel="noopener noreferrer" href="https://www.programiz.com/">Programiz</a>, which appears to have a fairly detailed tutorial about the Java language.
+                        <ul>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.programiz.com/java-programming/variables-literals">Variables & Datatypes</a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.programiz.com/java-programming/if-else-statement">If-Else Statements</a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.programiz.com/java-programming/do-while-loop">While Loop</a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.programiz.com/java-programming/for-loop">For Loop</a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.programiz.com/java-programming/methods">Methods</a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.programiz.com/java-programming/arrays">Arrays</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="cpp" role="tabpanel" aria-labelledby="cpp-tab">
+                        All these links lead to <a target="_blank" rel="noopener noreferrer" href="https://cplusplus.com/doc/tutorial/">cplusplus</a>, which has a detailed tutorial for the language, along with a reference manual that I reference quite often at work.
+                        <ul>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://cplusplus.com/doc/tutorial/variables/">Variables & Types</a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://cplusplus.com/doc/tutorial/control/">If-Else Statements & Loops</a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://cplusplus.com/doc/tutorial/functions/">Functions</a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://cplusplus.com/doc/tutorial/arrays/">Arrays</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h2>Practice Problem</h2>
+                <hr>
+                <p>
+                    Since this is our first practice problem, I'll explain how this works. To go along with the readings provided above, there will be a practice problem to go along with it. This problem should utilize the concepts discussed above in some fashion. The problem will detail out exactly what should be expected, with some sample output to give an idea as to what I'm looking for. You won't be provided <b>ANY</b> starting code, as I feel part of the learning process is how you design your program, rather than just <i>filling in the blanks</i>. How you end up designing the program is totally up to you, as long as you're utilizing the concepts above and it behaves similar to way described below.
+                </p>
+                <p>
+                    I'll also be providing a link to a GitHub repo with my solution to the problem. I highly recommend not looking at it until your satisfied with your program. If you get stuck, don't look at my answer, but review the concepts above and ask the internet for help! Utilize all your tools, just like how you would in a real-world environment.
+                </p>
+                <p>
+                    Without further ado, let's get into the problem!
+                </p>
+                <h3>Array Manipulation</h3>
+                <hr>
+                <p>
+                    This is a problem that I would ask students I was tutoring back in college, it was a good assessment as to gauging how well they understood these concepts. I will be adding on some additional components to it, as we're no longer bound by the time-constraints of college. What we're going to build is a simple <b>menu-driven, command line based</b> program that will allow users to <b>manipulate an array and display information about it</b>. We'll be working with <b>doubles</b> for our underlying data.
+                </p>
+                <p>
+                    For the menu, you'll provide the following options for the user:
+                    <ol>
+                        <li>
+                            Add a new number to the array.
+                        </li>
+                        <li>
+                            Search the array for a specified number and inform the user of the result.
+                        </li>
+                        <li>
+                            Remove all instances of a specified number from the array.
+                        </li>
+                        <li>
+                            Sort the array from lowest to highest.
+                        </li>
+                        <li>
+                            Print out the entire array.
+                        </li>
+                        <li>
+                            Print out the number at the specified index of the array.
+                        </li>
+                        <li>
+                            Print some statistics of the array. The Mean, Median, and Mode.
+                        </li>
+                        <li>
+                            Clear the array.
+                        </li>
+                        <li>
+                            Exit the program.
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    That's it! It's a pretty straight forward program, but it could get a bit messy if you don't design it well. So here's some pointers to try to follow while you program this:
+                    <ul>
+                        <li>
+                            Try to avoid duplicate code. You might find some of the options will require similar processes to achieve. Try to utilize <b>methods/functions</b> to wrap up the code to utilize in multiple areas.
+                        </li>
+                        <li>
+                            Be careful with user input! The user isn't guaranteed to enter valid data, so be sure to check if their input is one of the nine options, or even is a number to begin with!
+                        </li>
+                        <li>
+                            Also be aware of various edge cases you could get into. What if you have no values in your array? What if you try to add a value when your array is full? These cases may not be obvious initially, but just be aware of them and try to identify them as your implement each option.
+                        </li>
+                        <li>The sample output can be found <a target="_blank" rel="noopener noreferrer" href="output/section1-problem1.txt">here</a>.</li>
+                    </ul>
+                </p>
+                <p>
+                    Once you're done with the project, you can check your answer with my solution on <a target="_blank" rel="noopener noreferrer" href="https://github.com/mFireworks/Programming-Supplement/tree/main/Section1-Basics">Github</a>. If you feel like you're comfortable with these concepts, let's move on to <a href="section2.html">Section #2</a>!
+                </p>
+            </div>
+        </main>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top mt-auto" style="background-color: white;">
+            <div class="col-md-4 ms-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-body-secondary">Designed & Created by: Michael (Fireworks)<br>Est. 2018</span>
+            </div>
+            <ul class="nav col-md-4 me-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-body-secondary" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCwW7fKgZUB24sBNi6T5Z-hA">
+                        <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/youtube.png" alt="youtube icon" height="32">
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" target="_blank" rel="noopener noreferrer" href="https://www.twitch.tv/fireworkmaster9">
+                        <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/twitch.png" alt="twitch icon" height="32">
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" target="_blank" rel="noopener noreferrer" href="https://github.com/mFireworks">
+                        <img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/github.png" alt="github icon" height="32">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
